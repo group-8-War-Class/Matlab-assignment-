@@ -1,0 +1,13 @@
+n =input('enter number of courses');
+totalpoints = 0;
+totalcredits = 0;
+for i=1:n
+    disp(['course',num22str(i)]);
+    credit = input('enter credit units:');
+    gradepoint = input('enter grade oint:');
+ totalpoints = totalpoints + credit*gradepoint;
+ totalcredits = totalcredits + credit;
+
+end
+GPA = totalpoints/totalcredits;
+disp(['GPA = ',num2str(GPA)]);
